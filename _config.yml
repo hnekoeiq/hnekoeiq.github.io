@@ -13,14 +13,14 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Ramprasaath R. Selvaraju 
-email: ramprs@gatech.edu
+title: Hadi Nekoei 
+email: hadinekoei94@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Ramprasaath is a 5th year PhD student working with Devi Parikh and Dhruv Batra at Georgia Tech.
+  Hadi is a Research Intern at MILA.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://ramprs.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "http://hnekoeiq.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: ramprasaath21
-github_username:  ramprs
+github_username:  hnekoeiq
 
 # Build settings
 markdown: kramdown

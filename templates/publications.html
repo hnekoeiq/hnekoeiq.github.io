@@ -6,61 +6,69 @@
 <table style="width:100%;border:1px;border-spacing:1px;border-collapse:separate;margin-right:auto;margin-left:auto;">
 <tbody>
 	<tr>
-            <td width="30%"><img src="static/img/lifelong-hanabi.jpeg" alt="3DSP" width="300" height="150" style="border-style: none"></td>
+        <td
+                width="30%"><img src="static/img/lifelong-hanabi.jpeg" alt="3DSP" width="300" height="150" style="border-style: none">
+        </td>
 
-            <td valign="top" width="60%">
-              <a href="https://arxiv.org/abs/2103.03216">
-                      <papertitle>Continuous Coordination As a Realistic Scenario for Lifelong Learning</papertitle>
-              </a>
-            <br>
-            <b> Hadi Nekoei*</b>,
-		    <b> Akilesh Badrinaaraayanan*</b>,
-		    <b> Aaron Courville</b>,
-		    <b> Sarath Chandar</b>,
-			
-		<br>
+        <td valign="top" width="60%">
+          <a href="https://arxiv.org/abs/2103.03216">
+                  <papertitle>Continuous Coordination As a Realistic Scenario for Lifelong Learning</papertitle>
+          </a>
+        <br>
+        <b> Hadi Nekoei*</b>,
+        <b> Akilesh Badrinaaraayanan*</b>,
+        <b> Aaron Courville</b>,
+        <b> Sarath Chandar</b>,
+
+        <br>
               <em>ICML 2021, NERL Workshop (Spotlight) ICLR 2021</em><br>
-		<p class="content">In this work, we proposed Lifelong Hanabi as a new challenging benchmark for lifelong RL. 
-			The non-stationarity in our benchmark was introduced through agents having 
-			different strategies instead of synthetic modifications to the
-			environment or agent, while cross-play score served as an
-			easy metric to quantify the similarity between tasks. We
-			analyzed the performance of some well-known Lifelong Learning algorithms on this benchmark. We also showed that an IQL
-			agent continually trained in our setup can zero-shot coordinate effectively with unseen agents.</p>
-		</td>
-              
-              <td>
-		<a href="https://arxiv.org/pdf/2103.03216.pdf">Paper</a> /
+        <p class="content">In this work, we proposed Lifelong Hanabi as a new challenging benchmark for lifelong RL.
+            The non-stationarity in our benchmark was introduced through agents having
+            different strategies instead of synthetic modifications to the
+            environment or agent, while cross-play score served as an
+            easy metric to quantify the similarity between tasks. We
+            analyzed the performance of some well-known Lifelong Learning algorithms on this benchmark. We also showed that an IQL
+            agent continually trained in our setup can zero-shot coordinate effectively with unseen agents.</p>
+        </td>
+
+        <td>
+        <a href="https://arxiv.org/pdf/2103.03216.pdf">Paper</a> /
                <a href="https://github.com/chandar-lab/Lifelong-Hanabi">code</a>
-              
-            </td>
+
+        </td>
 	</tr>
 	
 	<tr>
-            <td width="30%"><img src="static/img/DEUP.png" alt="3DSP" width="300" height="200" style="border-style: none"></td>
+        <td width="30%"><img src="static/img/DEUP.png" alt="3DSP" width="300" height="200" style="border-style: none"></td>
 
-            <td valign="top" width="60%">
-              <a href="https://arxiv.org/abs/2007.03158">
-                      <papertitle>DEUP: Direct Epistemic Uncertainty Prediction</papertitle>
-              </a>
-            <br>
-            <b> Moksh Jain</b>,
-			<b> Salem Lahlou </b>, 
-			<b> Hadi Nekoei</b>, 
-		    <b>Victor Butoi</b> 
-		    <b> Paul Bertin </b>, 
-			<b> Jarrid Rector-Brooks</b>, 
-		    <b>Maksym Korablyov</b> 
-		    <b>Yoshua Bengio </b>
+        <td valign="top" width="60%">
+          <a href="https://arxiv.org/abs/2007.03158">
+                  <papertitle>DEUP: Direct Epistemic Uncertainty Prediction</papertitle>
+          </a>
+        <br>
+        <b> Moksh Jain</b>,
+        <b> Salem Lahlou </b>,
+        <b> Hadi Nekoei</b>,
+        <b>Victor Butoi</b>
+        <b> Paul Bertin </b>,
+        <b> Jarrid Rector-Brooks</b>,
+        <b>Maksym Korablyov</b>
+        <b>Yoshua Bengio </b>
 		<br>
               <em>Arxiv, 2021</em><br>
+            <p class="content">While previous work on epistemic uncertainty focused on model variance,
+                DEUP directly estimates the reducible generalization error and thus takes into
+                account model bias due to finite capacity or regularization. Comparative experimental results
+                against standard epistemic uncertainty predictors  confirm the usefulness of DEUP, either in
+                estimating this reducible error or in downstream tasks like sequential model  optimization
+                and reinforcement learning with exploration.</p>
 		</td>
-              
-              <td>
+
+        <td>
 		<a href="https://arxiv.org/abs/2102.08501">Paper</a> /
                <a href="https://github.com/MJ10/DEUP">code</a>
               
-            </td>
+        </td>
 	</tr>
 	
 	<tr>
@@ -77,6 +85,16 @@
 		    <b>Sarath Chandar</b> 
 		<br>
               <em>NeurIPS, 2020</em><br>
+                <p class="content">The common single-task sample-efficiency metric for evaluating
+                    deep model-based RL algorithms conflates improvements due to model-based learning
+                    with various other aspects, such as representation
+                    learning, making it difficult to assess true progress on model-based RL. To address
+                    this, we introduce an experimental setup and a metric, Local Change Adaptation
+                    (LoCA) regret, to evaluate model-based behavior of RL
+                    methods, inspired by work from neuroscience on detecting model-based behavior in
+                    humans and animals. Our metric can identify model-based behavior, even if the method
+                    uses a poor representation and provides insight in how close a method’s behavior is
+                    from optimal model-based behavior. </p>
 		</td>
               
               <td>
@@ -97,7 +115,12 @@
             <b> Hadi Nekoei</b>,
 			<b> Ahmed Afify </b>, 
 			<b> Juan Carrillo</b>, 
-		    <b>Sriram Ganapathi Subramanian</b> </td>
+		    <b>Sriram Ganapathi Subramanian</b>
+            <p class="content">Pommerman is a challenging multi-agent testbed published recently.
+                In this work, we implement state of the art multi-agent reinforcement learning algorithms
+                to train our agents on how to play the game. We also introduce a new algorithm called
+                Multi Strategy LOLA and demonstrate its superiority in comparison with state-of-the-art algorithms.</p>
+            </td>
 
               
               <td> <a href="https://1drv.ms/b/s!Aii679w1BZ6jbSjUl1ZranveN4s">Poster</a> /
@@ -123,7 +146,14 @@
             <br>
               <em>IAAI, 2019</em><br>
             <br>
-
+                <p class="content">This paper proposes a novel trading system which plays the role of
+                    an artificial counselor for stock investment. In this paper, the stock future prices
+                    (technical features) are predicted using Support Vector Regression.
+                    Thereafter, the predicted prices are used to recommend which portions of the budget
+                    an investor should invest in different existing stocks to have an optimum expected
+                    profit considering their level of risk tolerance. Two different methods are used
+                    for suggesting best portions, which are Markowitz portfolio theory and fuzzy investment counselor.</p>
+            </td>
              <td>   <a href="https://www.aaai.org/ojs/index.php/AAAI/article/view/5016">Paper</a>
 
             </td>

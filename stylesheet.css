@@ -113,7 +113,6 @@ conference {
   color: #ee5253;
 }
 
-
 name {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 48px;
@@ -144,41 +143,66 @@ span.highlight {
   background-color: #ffffd0;
 }
 
-/* Existing styles */
-body,
-td,
-th,
-tr,
-p,
-a {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 16px
+/* New styles for publications */
+.publications {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-/* New responsive styles */
+.publication-item {
+  display: flex;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #e0e0e0;  /* Add this line for the separator */
+}
+
+.publication-item:last-child {
+  border-bottom: none;  /* Remove border for the last item */
+}
+
+.publication-image {
+  flex: 0 0 300px;
+  margin-right: 20px;
+}
+
+.publication-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.publication-content {
+  flex: 1;
+  min-width: 300px;
+}
+
+/* Responsive styles */
 @media screen and (max-width: 768px) {
-  .row {
-    display: flex;
+  .publication-item {
     flex-direction: column;
   }
   
-  .row > div {
-    width: 100%;
-    margin-bottom: 20px;
+  .publication-image {
+    flex: 0 0 100%;
+    margin-right: 0;
+    margin-bottom: 15px;
   }
   
-  .row img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 10px;
+  .publication-content {
+    flex: 0 0 100%;
+  }
+  
+  body,
+  td,
+  th,
+  tr,
+  p,
+  a {
+    font-size: 14px;
   }
   
   papertitle {
     font-size: 16px;
-  }
-  
-  p {
-    font-size: 14px;
   }
 }
 
@@ -190,7 +214,7 @@ a {
   tr,
   p,
   a {
-    font-size: 14px;
+    font-size: 13px;
   }
   
   papertitle {

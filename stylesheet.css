@@ -143,3 +143,57 @@ name {
 span.highlight {
   background-color: #ffffd0;
 }
+
+/* Existing styles */
+body,
+td,
+th,
+tr,
+p,
+a {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 16px
+}
+
+/* New responsive styles */
+@media screen and (max-width: 768px) {
+  .row {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .row > div {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .row img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  papertitle {
+    font-size: 16px;
+  }
+  
+  p {
+    font-size: 14px;
+  }
+}
+
+/* Additional improvements for very small screens */
+@media screen and (max-width: 480px) {
+  body,
+  td,
+  th,
+  tr,
+  p,
+  a {
+    font-size: 14px;
+  }
+  
+  papertitle {
+    font-size: 15px;
+  }
+}

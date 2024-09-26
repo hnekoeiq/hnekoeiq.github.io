@@ -50,6 +50,11 @@
             $("#education").load("templates/education.html"); 
             $("#contact").load("templates/contact.html"); 
 
+            // Ensure menu is closed on page load for mobile devices
+            if ($(window).width() <= 767) {
+                $('#navbar-menu').removeClass('active');
+            }
+
             // Toggle mobile menu
             $('#menu-toggle').click(function() {
                 $('#navbar-menu').toggleClass('active');
@@ -57,7 +62,16 @@
 
             // Close menu when a link is clicked
             $('#navbar-menu a').click(function() {
-                $('#navbar-menu').removeClass('active');
+                if ($(window).width() <= 767) {
+                    $('#navbar-menu').removeClass('active');
+                }
+            });
+
+            // Handle window resize
+            $(window).resize(function() {
+                if ($(window).width() > 767) {
+                    $('#navbar-menu').removeClass('active');
+                }
             });
         });
     </script>

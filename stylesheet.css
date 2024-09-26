@@ -201,6 +201,16 @@ h2 {
   .publication-title {
     font-size: 16px;
   }
+
+  /* Fix for mobile menu */
+  .navbar-collapse.in {
+    overflow-y: visible;
+  }
+  
+  .navbar-fixed-top .navbar-collapse,
+  .navbar-fixed-bottom .navbar-collapse {
+    max-height: none;
+  }
 }
 
 @media (max-width: 480px) {
@@ -215,5 +225,38 @@ h2 {
 
   .publication-title {
     font-size: 15px;
+  }
+}
+
+/* Additional styles for proper menu display */
+.navbar-default .navbar-collapse {
+  border-color: transparent;
+}
+
+.navbar-default .navbar-toggle {
+  border-color: transparent;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: transparent;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #333;
+}
+
+.navbar-collapse.in {
+  overflow-y: auto;
+}
+
+@media (max-width: 767px) {
+  .navbar-nav {
+    margin: 0 -15px;
+  }
+  
+  .navbar-nav > li > a {
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
 }

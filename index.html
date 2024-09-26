@@ -49,6 +49,11 @@
             $("#experience").load("templates/experience.html"); 
             $("#education").load("templates/education.html"); 
             $("#contact").load("templates/contact.html"); 
+
+            // Close the mobile menu when a menu item is clicked
+            $('.navbar-nav>li>a').on('click', function(){
+                $('.navbar-collapse').collapse('hide');
+            });
         });
     </script>
     <script>

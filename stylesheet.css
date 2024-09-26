@@ -120,6 +120,55 @@ h2 i {
   color: var(--primary-color);
 }
 
+/* Publication styles */
+.publication-item {
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid var(--primary-color);
+}
+
+.publication-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.publication-title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: var(--primary-color);
+}
+
+.publication-authors {
+  font-style: italic;
+  margin-bottom: 5px;
+}
+
+.publication-venue {
+  color: var(--secondary-color);
+  margin-bottom: 10px;
+}
+
+.publication-description {
+  margin-bottom: 15px;
+}
+
+.publication-links a {
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  padding: 5px 10px;
+  background-color: var(--primary-color);
+  color: #fff;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.publication-links a:hover {
+  background-color: var(--secondary-color);
+}
+
 /* Footer styles */
 .footer {
   background-color: var(--card-background);
@@ -188,8 +237,21 @@ body.dark-mode .hero-section {
   background-color: #444;
 }
 
+body.dark-mode .publication-item {
+  border-bottom-color: var(--secondary-color);
+}
+
 /* Responsive styles */
 @media (max-width: 767px) {
+  body {
+    padding-top: 50px;
+  }
+
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
   .navbar-header {
     float: none;
   }
@@ -228,11 +290,50 @@ body.dark-mode .hero-section {
     padding-bottom: 10px;
   }
 
+  .hero-section {
+    padding: 60px 0;
+  }
+
   .hero-section h1 {
     font-size: 36px;
   }
 
   .hero-section p {
+    font-size: 18px;
+  }
+
+  .main-content {
+    padding: 20px 0;
+  }
+
+  .card {
+    padding: 15px;
+  }
+
+  .footer {
+    padding: 30px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .hero-section h1 {
+    font-size: 28px;
+  }
+
+  .hero-section p {
+    font-size: 16px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  .publication-title {
     font-size: 18px;
   }
 }

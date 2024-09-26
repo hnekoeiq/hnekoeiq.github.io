@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Hadi Nekoei</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
     <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 </head>
@@ -32,49 +34,83 @@
             </div>
         </div>
     </nav>
-    <div class="container">
+
+    <div class="hero-section">
+        <div class="container">
+            <h1>Hadi Nekoei</h1>
+            <p>Researcher in [Your Field]</p>
+        </div>
+    </div>
+
+    <div class="container main-content">
         <div id="about"></div>
-        <div id="publications"></div>
-        <div id="experience"></div>
-        <div id="education"></div>
+        
+        <div id="publications">
+            <h2><i class="fas fa-book"></i> Publications</h2>
+            <div class="card-container" id="publications-container"></div>
+        </div>
+        
+        <div id="experience">
+            <h2><i class="fas fa-briefcase"></i> Experience</h2>
+            <div class="card-container" id="experience-container"></div>
+        </div>
+        
+        <div id="education">
+            <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+            <div class="card-container" id="education-container"></div>
+        </div>
+        
         <div id="contact"></div>
     </div>
-    <div class="panel">
-        <font>(Design and CSS courtesy: <a href="https://jonbarron.info/">Jon Barron</a> and <a href="https://abhoi.github.io/">Amlaan Bhoi</a>)</font>
-    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>Contact</h3>
+                    <p>Email: your.email@example.com</p>
+                    <p>Phone: (123) 456-7890</p>
+                </div>
+                <div class="col-md-4">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#publications">Publications</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#education">Education</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h3>Follow Me</h3>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button id="dark-mode-toggle" aria-label="Toggle dark mode">
+        <i class="fas fa-moon"></i>
+    </button>
+
     <script type="text/javascript">
         $(document).ready(function() {
             $("#about").load("templates/about.html"); 
-            $("#publications").load("templates/publications.html"); 
-            $("#experience").load("templates/experience.html"); 
-            $("#education").load("templates/education.html"); 
+            $("#publications-container").load("templates/publications.html"); 
+            $("#experience-container").load("templates/experience.html"); 
+            $("#education-container").load("templates/education.html"); 
             $("#contact").load("templates/contact.html"); 
 
-            // Ensure menu is closed on page load for mobile devices
-            if ($(window).width() <= 767) {
-                $('#navbar-menu').removeClass('active');
-            }
-
-            // Toggle mobile menu
+            // Mobile menu toggle
             $('#menu-toggle').click(function() {
                 $('#navbar-menu').toggleClass('active');
             });
 
-            // Close menu when a link is clicked
-            $('#navbar-menu a').click(function() {
-                if ($(window).width() <= 767) {
-                    $('#navbar-menu').removeClass('active');
-                }
-            });
-
-            // Handle window resize
-            $(window).resize(function() {
-                if ($(window).width() > 767) {
-                    $('#navbar-menu').removeClass('active');
-                }
+            // Dark mode toggle
+            $('#dark-mode-toggle').click(function() {
+                $('body').toggleClass('dark-mode');
             });
         });
     </script>
-    <!-- Other scripts (Google Analytics, etc.) -->
 </body>
 </html>
